@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <fullName>Москаленко Максим Андрійович</fullName>
+    <studentId>12344566</studentId>
+    <faculty>ФКНТ</faculty>
+    <specialty>121</specialty>
+    <course>3</course>
+    <group>ПІ-321</group>
+    <subject>Програмування для Інтернет</subject>
+    <grade>92</grade>
+    <date>2025-03-28</date>
+  </student>
+</students>

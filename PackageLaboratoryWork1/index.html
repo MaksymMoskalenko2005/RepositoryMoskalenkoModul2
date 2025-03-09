@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Залікова книжка студента</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Залікова книжка студента</h1>
+        <form id="studentForm">
+            <label for="fullName">ПІБ студента:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="studentId">Номер залікової книжки:</label>
+            <input type="text" id="studentId" name="studentId" required>
+
+            <label for="faculty">Факультет:</label>
+            <input type="text" id="faculty" name="faculty" required>
+
+            <label for="specialty">Спеціальність:</label>
+            <input type="text" id="specialty" name="specialty" required>
+
+            <label for="course">Курс:</label>
+            <input type="number" id="course" name="course" required>
+
+            <label for="group">Група:</label>
+            <input type="text" id="group" name="group" required>
+
+            <h2>Оцінки</h2>
+            <label for="subject">Предмет:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="grade">Оцінка:</label>
+            <input type="number" id="grade" name="grade" required>
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Зберегти</button>
+        </form>
+
+        <h2>Список оцінок</h2>
+        <table id="gradesTable">
+            <thead>
+                <tr>
+                    <th>ПІБ</th>
+                    <th>Предмет</th>
+                    <th>Оцінка</th>
+                    <th>Дата</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Дані будуть додаватися сюди -->
+            </tbody>
+        </table>
+
+        <!-- Кнопки для експорту даних -->
+        <div class="export-button">
+            <button id="exportJsonButton">Експортувати у JSON</button>
+        </div>
+        <div class="export-button">
+            <button id="exportXmlButton">Експортувати у XML</button>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
