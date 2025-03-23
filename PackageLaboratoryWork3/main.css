@@ -1,0 +1,72 @@
+/* Основні стилі */
+body {
+    background-color: aliceblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Центрування всіх елементів */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Стилі для форми */
+form {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Кнопки вибору діапазону */
+button[name="max_value"][value="10"] { background-color: lightcoral; }
+button[name="max_value"][value="20"] { background-color: lightseagreen; }
+button[name="max_value"][value="28"] { background-color: lightgoldenrodyellow; }
+button[name="max_value"][value="100"] { background-color: lightskyblue; }
+
+/* Кнопки операцій */
+button[name="sign"][value="+"] { background-color: lightgreen; }
+button[name="sign"][value="-"] { background-color: lightsalmon; }
+button[name="sign"][value="*"] { background-color: lightpink; }
+
+/* Кнопка генерації виразу */
+button[name="generate"] {
+    background-color: orange;
+}
+
+/* Кнопка перевірки */
+button[name="check"] {
+    background-color: lightblue;
+}
+
+/* Стилі для таблиці з виразом */
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+/* Поля вводу */
+input {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Блок клавіатури */
+#keyboard {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: white;
+}
+
+/* Стилі для кнопок клавіатури */
+#keyboard button {
+    background-color: rgb(235, 106, 142);
+    border: none;
+    cursor: pointer;
+}
+
+#keyboard button:hover {
+    background-color: rgb(137, 64, 97);
+}
